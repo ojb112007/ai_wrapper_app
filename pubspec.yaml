@@ -1,0 +1,38 @@
+# pubspec.yaml
+name: ai_wrapper_app
+description: A simple AI wrapper mobile application.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^0.13.4
+  flutter_dotenv: ^5.0.2
+  shared_preferences: ^2.0.15
+  animated_text_kit: ^4.2.3
+  go_router: ^14.8.1
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.2
+  google_sign_in: ^6.2.2
+  sign_in_with_apple: ^7.0.1
+  intl: ^0.20.2
+  cloud_firestore: ^5.6.7
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Add the .env file to assets
+  assets:
+    - .env

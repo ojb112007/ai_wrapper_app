@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295400968333",
+    "project_id": "aiwrapper-96714",
+    "storage_bucket": "aiwrapper-96714.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295400968333:android:68f4cf6112d558e96412c4",
+        "android_client_info": {
+          "package_name": "com.example.ai_wrapper_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACBqH4IeB7zoe6u2svM7X8uFnyeMNyCr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
