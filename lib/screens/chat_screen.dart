@@ -65,10 +65,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       await chatRepo!.createNewChat(text);
       // chatRepo!.saveMessage(
       //     chatId: chatRepo!.chatIdVal!, content: text, isUser: true);
-    } else {
-      await chatRepo!.saveMessage(
-          chatId: chatRepo!.chatIdVal!, content: text, isUser: true);
-    }
+    } 
     // Add user message to chat
     setState(() {
       _messages.add(ChatMessage(

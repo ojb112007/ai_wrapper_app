@@ -5,8 +5,6 @@ import 'package:ai_wrapper_app/services/typing_text_widget.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'firebase_options.dart';
 
@@ -17,7 +15,7 @@ void main() async {
   );
   // Load environment variables from .env file
   await dotenv.load(fileName: ".env");
-  runApp(ProviderScope(child: const AIWrapperApp()));
+  runApp(const ProviderScope(child: AIWrapperApp()));
 }
 
 class AIWrapperApp extends StatelessWidget {

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 class ChatMessage {
-  final int? id;
+  final String? id;
   final String text;
   final bool isUser;
   final DateTime? timestamp;
@@ -19,7 +19,7 @@ class ChatMessage {
       this.timestamp,
       this.conversationId,
       this.onAnimationComplete,
-      this.hasAnimated});
+      this.hasAnimated = true});
 
   Map<String, dynamic> toMap() {
     return {
@@ -35,9 +35,9 @@ class ChatMessage {
     return ChatMessage(
       id: map['id'],
       text: map['content'],
-      isUser: map['isUser'] == 1,
+      isUser: map['isUser'],
       modelInfo: map['modelInfo'],
-      timestamp: DateTime.fromMillisecondsSinceEpoch(map['timestamp']),
+      timestamp: DateTime.parse(map['timestamp']),
       conversationId: map['conversationId'],
     );
   }

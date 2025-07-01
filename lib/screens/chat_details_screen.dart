@@ -27,170 +27,170 @@ class _ChatDetailScreenState extends State<ChatDetailScreen> {
   void initState() {
     super.initState();
     // Initialize with hardcoded messages based on chatId
-    _loadMessages();
+    //_loadMessages();
   }
 
-  void _loadMessages() {
-    // Hardcoded messages for different conversations
-    switch (widget.chatId) {
-      case '1':
-        messages = [
-          ChatMessage(
-            id: 1,
-            text: 'Hi, I need help with Flutter development.',
-            isUser: true,
-            timestamp: DateTime.now().subtract(Duration(minutes: 30)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 2,
-            text:
-                'Of course! What specific aspect of Flutter can I help you with?',
-            isUser: false,
-            timestamp: DateTime.now().subtract(Duration(minutes: 29)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 3,
-            text: 'Could you explain how to implement state management?',
-            isUser: true,
-            timestamp: DateTime.now().subtract(Duration(minutes: 25)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 4,
-            text:
-                'State management in Flutter has several approaches. The most common ones include Provider, Riverpod, Bloc, and GetX. Would you like me to explain any of these in detail?',
-            isUser: false,
-            timestamp: DateTime.now().subtract(Duration(minutes: 24)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-        ];
-        break;
-      case '2':
-        messages = [
-          ChatMessage(
-            id: 1,
-            text: 'I\'m looking for project ideas for my portfolio.',
-            isUser: true,
-            timestamp: DateTime.now().subtract(Duration(hours: 3)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 2,
-            text:
-                'That\'s exciting! What kind of technologies are you interested in working with?',
-            isUser: false,
-            timestamp: DateTime.now().subtract(Duration(hours: 3)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 3,
-            text: 'I\'m interested in AI and mobile development.',
-            isUser: true,
-            timestamp: DateTime.now().subtract(Duration(hours: 2)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 4,
-            text:
-                'For AI and mobile, you could build a smart personal assistant, an image recognition app, or a language learning tool. What about an AI-powered note-taking app?',
-            isUser: false,
-            timestamp: DateTime.now().subtract(Duration(hours: 2)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-        ];
-        break;
-      case '3':
-        messages = [
-          ChatMessage(
-            id: 1,
-            text: 'I\'m learning Dart programming.',
-            isUser: true,
-            timestamp: DateTime.now().subtract(Duration(days: 1, hours: 2)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 2,
-            text:
-                'That\'s great! Dart is a powerful language, especially with Flutter. What would you like to know about it?',
-            isUser: false,
-            timestamp: DateTime.now().subtract(Duration(days: 1, hours: 2)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 3,
-            text: 'How do I use async/await in Dart?',
-            isUser: true,
-            timestamp: DateTime.now().subtract(Duration(days: 1, hours: 1)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 4,
-            text:
-                'Async/await in Dart is used for asynchronous programming. You mark functions with `async` and use `await` to wait for Future values. This makes asynchronous code read like synchronous code, improving readability and error handling.',
-            isUser: false,
-            timestamp: DateTime.now().subtract(Duration(days: 1, hours: 1)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-        ];
-        break;
-      case '4':
-        messages = [
-          ChatMessage(
-            id: 1,
-            text: 'I\'m designing a mobile app and need advice.',
-            isUser: true,
-            timestamp: DateTime.now().subtract(Duration(days: 3, hours: 5)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 2,
-            text:
-                'I\'d be happy to help with your app design. What kind of advice are you looking for?',
-            isUser: false,
-            timestamp: DateTime.now().subtract(Duration(days: 3, hours: 5)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 3,
-            text: 'What are the best practices for dark mode implementation?',
-            isUser: true,
-            timestamp: DateTime.now().subtract(Duration(days: 3, hours: 4)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-          ChatMessage(
-            id: 4,
-            text:
-                'For dark mode, consider these best practices: use a consistent color palette, maintain sufficient contrast, test with users, offer manual and automatic switching, and use system-friendly default themes.',
-            isUser: false,
-            timestamp: DateTime.now().subtract(Duration(days: 3, hours: 4)),
-            conversationId: widget.chatId,
-            modelInfo: 'AI Assistant',
-          ),
-        ];
-        break;
-      default:
-        // New conversation
-        messages = [];
-        break;
-    }
-  }
+  // void _loadMessages() {
+  //   // Hardcoded messages for different conversations
+  //   switch (widget.chatId) {
+  //     case '1':
+  //       messages = [
+  //         ChatMessage(
+  //           id: 1,
+  //           text: 'Hi, I need help with Flutter development.',
+  //           isUser: true,
+  //           timestamp: DateTime.now().subtract(Duration(minutes: 30)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 2,
+  //           text:
+  //               'Of course! What specific aspect of Flutter can I help you with?',
+  //           isUser: false,
+  //           timestamp: DateTime.now().subtract(Duration(minutes: 29)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 3,
+  //           text: 'Could you explain how to implement state management?',
+  //           isUser: true,
+  //           timestamp: DateTime.now().subtract(Duration(minutes: 25)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 4,
+  //           text:
+  //               'State management in Flutter has several approaches. The most common ones include Provider, Riverpod, Bloc, and GetX. Would you like me to explain any of these in detail?',
+  //           isUser: false,
+  //           timestamp: DateTime.now().subtract(Duration(minutes: 24)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //       ];
+  //       break;
+  //     case '2':
+  //       messages = [
+  //         ChatMessage(
+  //           id: 1,
+  //           text: 'I\'m looking for project ideas for my portfolio.',
+  //           isUser: true,
+  //           timestamp: DateTime.now().subtract(Duration(hours: 3)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 2,
+  //           text:
+  //               'That\'s exciting! What kind of technologies are you interested in working with?',
+  //           isUser: false,
+  //           timestamp: DateTime.now().subtract(Duration(hours: 3)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 3,
+  //           text: 'I\'m interested in AI and mobile development.',
+  //           isUser: true,
+  //           timestamp: DateTime.now().subtract(Duration(hours: 2)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 4,
+  //           text:
+  //               'For AI and mobile, you could build a smart personal assistant, an image recognition app, or a language learning tool. What about an AI-powered note-taking app?',
+  //           isUser: false,
+  //           timestamp: DateTime.now().subtract(Duration(hours: 2)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //       ];
+  //       break;
+  //     case '3':
+  //       messages = [
+  //         ChatMessage(
+  //           id: 1,
+  //           text: 'I\'m learning Dart programming.',
+  //           isUser: true,
+  //           timestamp: DateTime.now().subtract(Duration(days: 1, hours: 2)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 2,
+  //           text:
+  //               'That\'s great! Dart is a powerful language, especially with Flutter. What would you like to know about it?',
+  //           isUser: false,
+  //           timestamp: DateTime.now().subtract(Duration(days: 1, hours: 2)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 3,
+  //           text: 'How do I use async/await in Dart?',
+  //           isUser: true,
+  //           timestamp: DateTime.now().subtract(Duration(days: 1, hours: 1)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 4,
+  //           text:
+  //               'Async/await in Dart is used for asynchronous programming. You mark functions with `async` and use `await` to wait for Future values. This makes asynchronous code read like synchronous code, improving readability and error handling.',
+  //           isUser: false,
+  //           timestamp: DateTime.now().subtract(Duration(days: 1, hours: 1)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //       ];
+  //       break;
+  //     case '4':
+  //       messages = [
+  //         ChatMessage(
+  //           id: 1,
+  //           text: 'I\'m designing a mobile app and need advice.',
+  //           isUser: true,
+  //           timestamp: DateTime.now().subtract(Duration(days: 3, hours: 5)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 2,
+  //           text:
+  //               'I\'d be happy to help with your app design. What kind of advice are you looking for?',
+  //           isUser: false,
+  //           timestamp: DateTime.now().subtract(Duration(days: 3, hours: 5)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 3,
+  //           text: 'What are the best practices for dark mode implementation?',
+  //           isUser: true,
+  //           timestamp: DateTime.now().subtract(Duration(days: 3, hours: 4)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //         ChatMessage(
+  //           id: 4,
+  //           text:
+  //               'For dark mode, consider these best practices: use a consistent color palette, maintain sufficient contrast, test with users, offer manual and automatic switching, and use system-friendly default themes.',
+  //           isUser: false,
+  //           timestamp: DateTime.now().subtract(Duration(days: 3, hours: 4)),
+  //           conversationId: widget.chatId,
+  //           modelInfo: 'AI Assistant',
+  //         ),
+  //       ];
+  //       break;
+  //     default:
+  //       // New conversation
+  //       messages = [];
+  //       break;
+  //   }
+  // }
 
   void _sendMessage() {
     if (_messageController.text.trim().isEmpty) return;
@@ -198,7 +198,7 @@ class _ChatDetailScreenState extends State<ChatDetailScreen> {
     setState(() {
       messages.add(
         ChatMessage(
-          id: messages.isEmpty ? 1 : (messages.last.id ?? 0) + 1,
+          // id: messages.isEmpty ? 1 : (messages.last.id ?? 0) + 1,
           text: _messageController.text,
           isUser: true,
           timestamp: DateTime.now(),
@@ -228,7 +228,7 @@ class _ChatDetailScreenState extends State<ChatDetailScreen> {
         setState(() {
           messages.add(
             ChatMessage(
-              id: messages.isEmpty ? 1 : (messages.last.id ?? 0) + 1,
+              // id: messages.isEmpty ? 1 : (messages.last.id ?? 0) + 1,
               text:
                   'This is a simulated AI response to your message: "${_messageController.text}"',
               isUser: false,
